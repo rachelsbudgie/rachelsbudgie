@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A personal blog with tutorials, projects, and ideas." />
   <title>My Blog</title>
+
   <link rel="stylesheet" href="styles.css"/>
 </head>
 
@@ -11,37 +13,44 @@
 
   <header class="navbar">
     <h1 class="logo">My Blog</h1>
-    <nav>
+
+    <nav aria-label="Main navigation">
       <a href="#">Home</a>
       <a href="#posts">Posts</a>
-      <a href="https://github.com/rachelsbudgie" target="_blank">GitHub</a>
+      <a href="https://github.com/rachelsbudgie" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Welcome to my blog 👋</h2>
-    <p>Thoughts, tutorials, and projects I’m working on.</p>
-  </section>
+  <main>
 
-  <section id="posts" class="posts">
-    <h2>Latest Posts</h2>
+    <section class="hero">
+      <h2>Welcome to my blog 👋</h2>
+      <p>Thoughts, tutorials, and projects I’m working on.</p>
+    </section>
 
-    <div class="post-grid">
+    <section id="posts" class="posts">
+      <h2>Latest Posts</h2>
 
-      <a class="post-card" href="posts/post1.html">
-        <h3>DIY Bird Stand</h3>
-        <p>Learn how to deploy your first static website on GitHub.</p>
-        <span>June 2026</span>
-      </a>
+      <div class="post-grid">
 
-      <a class="post-card" href="posts/post2.html">
-        <h3>Building a Clean Portfolio</h3>
-        <p>How to design a simple developer portfolio using HTML & CSS.</p>
-        <span>May 2026</span>
-      </a>
+        <a class="post-card" href="posts/post1.html">
+          <h3>DIY Bird Stand</h3>
+          <p>Build a simple bird perch using safe materials.</p>
+          <span>June 2026</span>
+        </a>
 
-    </div>
-  </section>
+        <a class="post-card" href="posts/post2.html">
+          <h3>Building a Clean Portfolio</h3>
+          <p>How to design a simple developer portfolio using HTML & CSS.</p>
+          <span>May 2026</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>© 2026 My Blog • Built with GitHub Pages</p>
